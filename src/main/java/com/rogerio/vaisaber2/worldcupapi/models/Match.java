@@ -19,6 +19,7 @@ public class Match {
 	private Team homeTeam;
 	@JsonProperty(value="away_team")
 	private Team awayTeam;
+	private String status;
 	
 	public String getLocation() {
 		return location;
@@ -70,7 +71,14 @@ public class Match {
 		partida.setEstadio(location);
 		partida.setMandante(homeTeam.toDomain());
 		partida.setVisitante(awayTeam.toDomain());
+		partida.setStatus(status);
 		return partida;
 
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 }

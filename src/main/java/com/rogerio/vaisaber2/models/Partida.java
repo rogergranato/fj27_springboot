@@ -13,6 +13,7 @@ public class Partida {
 	private Long codigoFifa;
 	private Selecao mandante;
 	private Selecao visitante;
+	private String status;
 	
 	public String getEstadio() {
 		return estadio;
@@ -43,5 +44,11 @@ public class Partida {
 	}
 	public void setVisitante(Selecao visitante) {
 		this.visitante = visitante;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 }
